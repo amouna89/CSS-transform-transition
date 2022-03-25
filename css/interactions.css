@@ -1,0 +1,64 @@
+/* ================================= 
+  Button Transitions
+==================================== */
+
+/* ================================= 
+transition-duration l'ordre est important ::after
+.5s : background
+.8s:: color 
+.3s:border
+==================================== */
+.button {
+	color: #4a89ca;
+  background-color: whitesmoke;
+  transition-property: background , color, border-radius;
+  transition-duration: .5s,.8s,.3s;/*la valeur par défaut est 0, */
+
+}
+.button:hover {
+  color:whitesmoke;
+  background-color: #4a89ca;
+  border-radius: 1em;
+  
+
+}
+
+
+.photo-overlay{
+  opacity:0;
+  transition-property: opacity;
+  transition-duration: .5s;
+}
+.photo-overlay:hover {
+  opacity:1;
+
+}
+/* ================================= 
+image  Transitions
+==================================== */
+
+img {
+
+  transition: transform .5s ease-in-out .2s;
+
+}
+img:hover {
+
+  transform: rotate(-5deg);
+}
+/* ================================= 
+logo  Transitions
+==================================== */
+.logo {
+  
+  transition: transform .5s ease-in-out .2s;
+}
+
+.logo:hover{
+
+  transform: rotate(2turn);
+} 
+
+/* ================================= 
+  Photo Overlay Transitions
+==================================== */
